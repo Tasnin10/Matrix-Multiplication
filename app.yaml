@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: task2-matrix-multiply
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
